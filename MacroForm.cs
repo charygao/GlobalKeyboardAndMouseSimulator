@@ -67,9 +67,9 @@ namespace GlobalMacroRecorder
 
         protected override void Dispose(bool disposing)
         {
-            if (disposing && icontainer_0 != null)
+            if (disposing)
             {
-                icontainer_0.Dispose();
+                icontainer_0?.Dispose();
             }
             base.Dispose(disposing);
         }
@@ -127,283 +127,303 @@ namespace GlobalMacroRecorder
 
         private void InitializeComponent()
         {
-            components = new Container();
-            ComponentResourceManager resources = new ComponentResourceManager(typeof(MacroForm));
-            recordStartButton = new Button();
-            recordStopButton = new Button();
-            playBackMacroButton = new Button();
-            label1 = new Label();
-            label2 = new Label();
-            loopnumericUpDown = new NumericUpDown();
-            label3 = new Label();
-            label4 = new Label();
-            spannumericUpDown = new NumericUpDown();
-            label5 = new Label();
-            label6 = new Label();
-            StopBackMacroButton = new Button();
-            savebutton = new Button();
-            openbutton = new Button();
-            textBoxStart = new TextBox();
-            textBoxStop = new TextBox();
-            textBoxPlay = new TextBox();
-            textBoxStopPlay = new TextBox();
-            notifyIcon_0 = new NotifyIcon(components);
-            contextMenuStrip1 = new ContextMenuStrip(components);
-            打开主窗体ToolStripMenuItem = new ToolStripMenuItem();
-            访问官网ToolStripMenuItem = new ToolStripMenuItem();
-            退出ToolStripMenuItem = new ToolStripMenuItem();
-            buttonSetShotcut = new Button();
-            ((ISupportInitialize)(loopnumericUpDown)).BeginInit();
-            ((ISupportInitialize)(spannumericUpDown)).BeginInit();
-            contextMenuStrip1.SuspendLayout();
-            SuspendLayout();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MacroForm));
+            this.recordStartButton = new System.Windows.Forms.Button();
+            this.recordStopButton = new System.Windows.Forms.Button();
+            this.playBackMacroButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.loopnumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.spannumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.StopBackMacroButton = new System.Windows.Forms.Button();
+            this.savebutton = new System.Windows.Forms.Button();
+            this.openbutton = new System.Windows.Forms.Button();
+            this.textBoxStart = new System.Windows.Forms.TextBox();
+            this.textBoxStop = new System.Windows.Forms.TextBox();
+            this.textBoxPlay = new System.Windows.Forms.TextBox();
+            this.textBoxStopPlay = new System.Windows.Forms.TextBox();
+            this.notifyIcon_0 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.打开主窗体ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.访问官网ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buttonSetShotcut = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.loopnumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spannumericUpDown)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // recordStartButton
             // 
-            recordStartButton.Location = new System.Drawing.Point(52, 15);
-            recordStartButton.Name = "recordStartButton";
-            recordStartButton.Size = new System.Drawing.Size(140, 21);
-            recordStartButton.TabIndex = 0;
-            recordStartButton.Text = "开始录制(Ctrl+F9)";
-            recordStartButton.UseVisualStyleBackColor = true;
+            this.recordStartButton.Location = new System.Drawing.Point(52, 15);
+            this.recordStartButton.Name = "recordStartButton";
+            this.recordStartButton.Size = new System.Drawing.Size(140, 21);
+            this.recordStartButton.TabIndex = 0;
+            this.recordStartButton.Text = "开始录制(Ctrl+F9)";
+            this.recordStartButton.UseVisualStyleBackColor = true;
+            this.recordStartButton.Click += new System.EventHandler(this.RecordStartButtonClick);
             // 
             // recordStopButton
             // 
-            recordStopButton.Location = new System.Drawing.Point(211, 15);
-            recordStopButton.Name = "recordStopButton";
-            recordStopButton.Size = new System.Drawing.Size(143, 21);
-            recordStopButton.TabIndex = 0;
-            recordStopButton.Text = "停止录制(Ctrl+F10)";
-            recordStopButton.UseVisualStyleBackColor = true;
+            this.recordStopButton.Location = new System.Drawing.Point(211, 15);
+            this.recordStopButton.Name = "recordStopButton";
+            this.recordStopButton.Size = new System.Drawing.Size(143, 21);
+            this.recordStopButton.TabIndex = 0;
+            this.recordStopButton.Text = "停止录制(Ctrl+F10)";
+            this.recordStopButton.UseVisualStyleBackColor = true;
+            this.recordStopButton.Click += new System.EventHandler(this.RecordStopButtonClick);
             // 
             // playBackMacroButton
             // 
-            playBackMacroButton.Location = new System.Drawing.Point(52, 65);
-            playBackMacroButton.Name = "playBackMacroButton";
-            playBackMacroButton.Size = new System.Drawing.Size(140, 21);
-            playBackMacroButton.TabIndex = 1;
-            playBackMacroButton.Text = "开始播放(Ctrl+F11)";
-            playBackMacroButton.UseVisualStyleBackColor = true;
+            this.playBackMacroButton.Location = new System.Drawing.Point(52, 65);
+            this.playBackMacroButton.Name = "playBackMacroButton";
+            this.playBackMacroButton.Size = new System.Drawing.Size(140, 21);
+            this.playBackMacroButton.TabIndex = 1;
+            this.playBackMacroButton.Text = "开始播放(Ctrl+F11)";
+            this.playBackMacroButton.UseVisualStyleBackColor = true;
+            this.playBackMacroButton.Click += new System.EventHandler(this.PlayBackMacroButtonClick);
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(17, 19);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(29, 12);
-            label1.TabIndex = 2;
-            label1.Text = "录制";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(17, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 12);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "录制";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(17, 69);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(29, 12);
-            label2.TabIndex = 2;
-            label2.Text = "播放";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(17, 69);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(29, 12);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "播放";
             // 
             // loopnumericUpDown
             // 
-            loopnumericUpDown.Location = new System.Drawing.Point(429, 65);
-            loopnumericUpDown.Maximum = new decimal(new int[] {
+            this.loopnumericUpDown.Location = new System.Drawing.Point(429, 65);
+            this.loopnumericUpDown.Maximum = new decimal(new int[] {
             -159383553,
             46653770,
             5421,
             0});
-            loopnumericUpDown.Name = "loopnumericUpDown";
-            loopnumericUpDown.Size = new System.Drawing.Size(40, 21);
-            loopnumericUpDown.TabIndex = 3;
+            this.loopnumericUpDown.Name = "loopnumericUpDown";
+            this.loopnumericUpDown.Size = new System.Drawing.Size(40, 21);
+            this.loopnumericUpDown.TabIndex = 3;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new System.Drawing.Point(371, 69);
-            label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(53, 12);
-            label3.TabIndex = 4;
-            label3.Text = "重复次数";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(371, 69);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 12);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "重复次数";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new System.Drawing.Point(371, 24);
-            label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(53, 12);
-            label4.TabIndex = 5;
-            label4.Text = "播放间隔";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(371, 24);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 12);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "播放间隔";
             // 
             // spannumericUpDown
             // 
-            spannumericUpDown.Location = new System.Drawing.Point(429, 20);
-            spannumericUpDown.Maximum = new decimal(new int[] {
+            this.spannumericUpDown.Location = new System.Drawing.Point(429, 20);
+            this.spannumericUpDown.Maximum = new decimal(new int[] {
             -1593835521,
             466537709,
             54210,
             0});
-            spannumericUpDown.Name = "spannumericUpDown";
-            spannumericUpDown.Size = new System.Drawing.Size(40, 21);
-            spannumericUpDown.TabIndex = 6;
+            this.spannumericUpDown.Name = "spannumericUpDown";
+            this.spannumericUpDown.Size = new System.Drawing.Size(40, 21);
+            this.spannumericUpDown.TabIndex = 6;
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Location = new System.Drawing.Point(474, 24);
-            label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(17, 12);
-            label5.TabIndex = 7;
-            label5.Text = "秒";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(474, 24);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(17, 12);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "秒";
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Location = new System.Drawing.Point(474, 69);
-            label6.Name = "label6";
-            label6.Size = new System.Drawing.Size(17, 12);
-            label6.TabIndex = 8;
-            label6.Text = "次";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(474, 69);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(17, 12);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "次";
             // 
             // StopBackMacroButton
             // 
-            StopBackMacroButton.Location = new System.Drawing.Point(211, 65);
-            StopBackMacroButton.Name = "StopBackMacroButton";
-            StopBackMacroButton.Size = new System.Drawing.Size(143, 21);
-            StopBackMacroButton.TabIndex = 9;
-            StopBackMacroButton.Text = "停止播放(Ctrl+F12)";
-            StopBackMacroButton.UseVisualStyleBackColor = true;
+            this.StopBackMacroButton.Location = new System.Drawing.Point(211, 65);
+            this.StopBackMacroButton.Name = "StopBackMacroButton";
+            this.StopBackMacroButton.Size = new System.Drawing.Size(143, 21);
+            this.StopBackMacroButton.TabIndex = 9;
+            this.StopBackMacroButton.Text = "停止播放(Ctrl+F12)";
+            this.StopBackMacroButton.UseVisualStyleBackColor = true;
+            this.StopBackMacroButton.Click += new System.EventHandler(this.StopBackMacroButton_Click);
             // 
             // savebutton
             // 
-            savebutton.Location = new System.Drawing.Point(52, 115);
-            savebutton.Name = "savebutton";
-            savebutton.Size = new System.Drawing.Size(140, 23);
-            savebutton.TabIndex = 10;
-            savebutton.Text = "保存脚本";
-            savebutton.UseVisualStyleBackColor = true;
+            this.savebutton.Location = new System.Drawing.Point(52, 115);
+            this.savebutton.Name = "savebutton";
+            this.savebutton.Size = new System.Drawing.Size(140, 23);
+            this.savebutton.TabIndex = 10;
+            this.savebutton.Text = "保存脚本";
+            this.savebutton.UseVisualStyleBackColor = true;
+            this.savebutton.Click += new System.EventHandler(this.SavebuttonClick);
             // 
             // openbutton
             // 
-            openbutton.Location = new System.Drawing.Point(211, 115);
-            openbutton.Name = "openbutton";
-            openbutton.Size = new System.Drawing.Size(143, 23);
-            openbutton.TabIndex = 11;
-            openbutton.Text = "打开脚本";
-            openbutton.UseVisualStyleBackColor = true;
+            this.openbutton.Location = new System.Drawing.Point(211, 115);
+            this.openbutton.Name = "openbutton";
+            this.openbutton.Size = new System.Drawing.Size(143, 23);
+            this.openbutton.TabIndex = 11;
+            this.openbutton.Text = "打开脚本";
+            this.openbutton.UseVisualStyleBackColor = true;
+            this.openbutton.Click += new System.EventHandler(this.OpenbuttonClick);
             // 
             // textBoxStart
             // 
-            textBoxStart.Location = new System.Drawing.Point(52, 41);
-            textBoxStart.Name = "textBoxStart";
-            textBoxStart.Size = new System.Drawing.Size(140, 21);
-            textBoxStart.TabIndex = 12;
-            textBoxStart.Text = "Ctrl+F9";
-            textBoxStart.TextAlign = HorizontalAlignment.Center;
+            this.textBoxStart.Location = new System.Drawing.Point(52, 41);
+            this.textBoxStart.Name = "textBoxStart";
+            this.textBoxStart.Size = new System.Drawing.Size(140, 21);
+            this.textBoxStart.TabIndex = 12;
+            this.textBoxStart.Text = "Ctrl+F9";
+            this.textBoxStart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxStart.MouseLeave += new System.EventHandler(this.TextBoxStartMouseLeave);
+            this.textBoxStart.MouseHover += new System.EventHandler(this.TextBoxStartMouseHover);
             // 
             // textBoxStop
             // 
-            textBoxStop.Location = new System.Drawing.Point(211, 42);
-            textBoxStop.Name = "textBoxStop";
-            textBoxStop.Size = new System.Drawing.Size(143, 21);
-            textBoxStop.TabIndex = 13;
-            textBoxStop.Text = "Ctrl+F10";
-            textBoxStop.TextAlign = HorizontalAlignment.Center;
+            this.textBoxStop.Location = new System.Drawing.Point(211, 42);
+            this.textBoxStop.Name = "textBoxStop";
+            this.textBoxStop.Size = new System.Drawing.Size(143, 21);
+            this.textBoxStop.TabIndex = 13;
+            this.textBoxStop.Text = "Ctrl+F10";
+            this.textBoxStop.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxStop.MouseLeave += new System.EventHandler(this.TextBoxStopMouseLeave);
+            this.textBoxStop.MouseHover += new System.EventHandler(this.TextBoxStopMouseHover);
             // 
             // textBoxPlay
             // 
-            textBoxPlay.Location = new System.Drawing.Point(52, 88);
-            textBoxPlay.Name = "textBoxPlay";
-            textBoxPlay.Size = new System.Drawing.Size(140, 21);
-            textBoxPlay.TabIndex = 14;
-            textBoxPlay.Text = "Ctrl+F11";
-            textBoxPlay.TextAlign = HorizontalAlignment.Center;
+            this.textBoxPlay.Location = new System.Drawing.Point(52, 88);
+            this.textBoxPlay.Name = "textBoxPlay";
+            this.textBoxPlay.Size = new System.Drawing.Size(140, 21);
+            this.textBoxPlay.TabIndex = 14;
+            this.textBoxPlay.Text = "Ctrl+F11";
+            this.textBoxPlay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPlay.MouseLeave += new System.EventHandler(this.TextBoxPlayMouseLeave);
+            this.textBoxPlay.MouseHover += new System.EventHandler(this.TextBoxPlayMouseHover);
             // 
             // textBoxStopPlay
             // 
-            textBoxStopPlay.Location = new System.Drawing.Point(211, 88);
-            textBoxStopPlay.Name = "textBoxStopPlay";
-            textBoxStopPlay.Size = new System.Drawing.Size(143, 21);
-            textBoxStopPlay.TabIndex = 15;
-            textBoxStopPlay.Text = "Ctrl+F12";
-            textBoxStopPlay.TextAlign = HorizontalAlignment.Center;
+            this.textBoxStopPlay.Location = new System.Drawing.Point(211, 88);
+            this.textBoxStopPlay.Name = "textBoxStopPlay";
+            this.textBoxStopPlay.Size = new System.Drawing.Size(143, 21);
+            this.textBoxStopPlay.TabIndex = 15;
+            this.textBoxStopPlay.Text = "Ctrl+F12";
+            this.textBoxStopPlay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxStopPlay.MouseLeave += new System.EventHandler(this.TextBoxStopPlayMouseLeave);
+            this.textBoxStopPlay.MouseHover += new System.EventHandler(this.TextBoxStopPlayMouseHover);
             // 
             // notifyIcon_0
             // 
-            notifyIcon_0.ContextMenuStrip = contextMenuStrip1;
-            notifyIcon_0.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon_0.Icon")));
-            notifyIcon_0.Text = "Dragon鼠标键盘模拟器";
-            notifyIcon_0.Visible = true;
+            this.notifyIcon_0.ContextMenuStrip = this.contextMenuStrip1;
+            this.notifyIcon_0.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon_0.Icon")));
+            this.notifyIcon_0.Text = "Dragon鼠标键盘模拟器";
+            this.notifyIcon_0.Visible = true;
+            this.notifyIcon_0.MouseClick += new System.Windows.Forms.MouseEventHandler(this.NotifyIcon0MouseClick);
             // 
             // contextMenuStrip1
             // 
-            contextMenuStrip1.Items.AddRange(new ToolStripItem[] {
-            打开主窗体ToolStripMenuItem,
-            访问官网ToolStripMenuItem,
-            退出ToolStripMenuItem});
-            contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new System.Drawing.Size(137, 70);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.打开主窗体ToolStripMenuItem,
+            this.访问官网ToolStripMenuItem,
+            this.退出ToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(137, 70);
             // 
             // 打开主窗体ToolStripMenuItem
             // 
-            打开主窗体ToolStripMenuItem.Name = "打开主窗体ToolStripMenuItem";
-            打开主窗体ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            打开主窗体ToolStripMenuItem.Text = "打开主窗体";
+            this.打开主窗体ToolStripMenuItem.Name = "打开主窗体ToolStripMenuItem";
+            this.打开主窗体ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.打开主窗体ToolStripMenuItem.Text = "打开主窗体";
+            this.打开主窗体ToolStripMenuItem.Click += new System.EventHandler(this.打开主窗体ToolStripMenuItem_Click);
             // 
             // 访问官网ToolStripMenuItem
             // 
-            访问官网ToolStripMenuItem.Name = "访问官网ToolStripMenuItem";
-            访问官网ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            访问官网ToolStripMenuItem.Text = "访问官网";
+            this.访问官网ToolStripMenuItem.Name = "访问官网ToolStripMenuItem";
+            this.访问官网ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.访问官网ToolStripMenuItem.Text = "访问官网";
+            this.访问官网ToolStripMenuItem.Click += new System.EventHandler(this.访问官网ToolStripMenuItem_Click);
             // 
             // 退出ToolStripMenuItem
             // 
-            退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
-            退出ToolStripMenuItem.Size = new System.Drawing.Size(136, 22);
-            退出ToolStripMenuItem.Text = "退出";
+            this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.退出ToolStripMenuItem.Text = "退出";
+            this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
             // 
             // buttonSetShotcut
             // 
-            buttonSetShotcut.Location = new System.Drawing.Point(373, 115);
-            buttonSetShotcut.Name = "buttonSetShotcut";
-            buttonSetShotcut.Size = new System.Drawing.Size(115, 23);
-            buttonSetShotcut.TabIndex = 18;
-            buttonSetShotcut.Text = "保存快捷键设置";
-            buttonSetShotcut.UseVisualStyleBackColor = true;
+            this.buttonSetShotcut.Location = new System.Drawing.Point(373, 115);
+            this.buttonSetShotcut.Name = "buttonSetShotcut";
+            this.buttonSetShotcut.Size = new System.Drawing.Size(115, 23);
+            this.buttonSetShotcut.TabIndex = 18;
+            this.buttonSetShotcut.Text = "保存快捷键设置";
+            this.buttonSetShotcut.UseVisualStyleBackColor = true;
+            this.buttonSetShotcut.Click += new System.EventHandler(this.ButtonSetShotcutOnClick);
             // 
             // MacroForm
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = System.Drawing.SystemColors.Control;
-            ClientSize = new System.Drawing.Size(503, 159);
-            Controls.Add(textBoxStopPlay);
-            Controls.Add(buttonSetShotcut);
-            Controls.Add(textBoxPlay);
-            Controls.Add(textBoxStop);
-            Controls.Add(textBoxStart);
-            Controls.Add(openbutton);
-            Controls.Add(savebutton);
-            Controls.Add(StopBackMacroButton);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(spannumericUpDown);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(loopnumericUpDown);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(playBackMacroButton);
-            Controls.Add(recordStopButton);
-            Controls.Add(recordStartButton);
-            Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            MaximizeBox = false;
-            Name = "MacroForm";
-            Text = "键盘鼠标模拟器";
-            FormClosing += MacroForm_FormClosing;
-            ((ISupportInitialize)(loopnumericUpDown)).EndInit();
-            ((ISupportInitialize)(spannumericUpDown)).EndInit();
-            contextMenuStrip1.ResumeLayout(false);
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(503, 159);
+            this.Controls.Add(this.textBoxStopPlay);
+            this.Controls.Add(this.buttonSetShotcut);
+            this.Controls.Add(this.textBoxPlay);
+            this.Controls.Add(this.textBoxStop);
+            this.Controls.Add(this.textBoxStart);
+            this.Controls.Add(this.openbutton);
+            this.Controls.Add(this.savebutton);
+            this.Controls.Add(this.StopBackMacroButton);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.spannumericUpDown);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.loopnumericUpDown);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.playBackMacroButton);
+            this.Controls.Add(this.recordStopButton);
+            this.Controls.Add(this.recordStartButton);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.Name = "MacroForm";
+            this.Text = "键盘鼠标模拟器";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MacroForm_FormClosing);
+            ((System.ComponentModel.ISupportInitialize)(this.loopnumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spannumericUpDown)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -912,13 +932,14 @@ namespace GlobalMacroRecorder
 
         private void 访问官网ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            RegistryKey registryKey = Registry.ClassesRoot.OpenSubKey("http\\shell\\open\\command\\");
-            if (registryKey != null)
-            {
-                string text = registryKey.GetValue("").ToString();
-                text = text.Substring(1, text.Length - 10);
-                Process.Start(text, "http://www.cnblogs.com/Chary/");
-            }
+            Process.Start("http://www.cnblogs.com/Chary/");
+            ////RegistryKey registryKey = Registry.ClassesRoot.OpenSubKey("http\\shell\\open\\command\\");
+            ////if (registryKey != null)
+            //{
+            //    //string text = registryKey.GetValue("").ToString();
+            //    //text = text.Substring(1, text.Length - 10);
+            //    Process.Start(text, "http://www.cnblogs.com/Chary/");
+            //}
         }
 
         private void 退出ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -936,5 +957,7 @@ namespace GlobalMacroRecorder
         }
 
         #endregion Private Methods
+
+
     }
 }
