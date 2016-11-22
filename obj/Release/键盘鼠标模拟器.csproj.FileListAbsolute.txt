@@ -1,0 +1,9 @@
+D:\Program Files\HK\Documents\GitHub\GlobalKeyboardAndMouseSimulator\bin\Release\Dragon键盘鼠标模拟器.exe.config
+D:\Program Files\HK\Documents\GitHub\GlobalKeyboardAndMouseSimulator\bin\Release\Dragon键盘鼠标模拟器.exe
+D:\Program Files\HK\Documents\GitHub\GlobalKeyboardAndMouseSimulator\bin\Release\Dragon键盘鼠标模拟器.pdb
+D:\Program Files\HK\Documents\GitHub\GlobalKeyboardAndMouseSimulator\bin\Release\MKLibrary.dll
+D:\Program Files\HK\Documents\GitHub\GlobalKeyboardAndMouseSimulator\obj\Release\GlobalMacroRecorder.MacroForm.resources
+D:\Program Files\HK\Documents\GitHub\GlobalKeyboardAndMouseSimulator\obj\Release\键盘鼠标模拟器.csproj.GenerateResource.Cache
+D:\Program Files\HK\Documents\GitHub\GlobalKeyboardAndMouseSimulator\obj\Release\Dragon键盘鼠标模拟器.exe
+D:\Program Files\HK\Documents\GitHub\GlobalKeyboardAndMouseSimulator\obj\Release\Dragon键盘鼠标模拟器.pdb
+D:\Program Files\HK\Documents\GitHub\GlobalKeyboardAndMouseSimulator\obj\Release\键盘鼠标模拟器.csprojResolveAssemblyReference.cache

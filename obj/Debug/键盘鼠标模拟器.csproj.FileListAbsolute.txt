@@ -5,3 +5,5 @@ D:\Program Files\HK\Documents\GitHub\MouseKeyboardLibrary\org\obj\Debug\GlobalMa
 D:\Program Files\HK\Documents\GitHub\MouseKeyboardLibrary\org\obj\Debug\键盘鼠标模拟器.csproj.GenerateResource.Cache
 D:\Program Files\HK\Documents\GitHub\MouseKeyboardLibrary\org\obj\Debug\Dragon键盘鼠标模拟器.exe
 D:\Program Files\HK\Documents\GitHub\MouseKeyboardLibrary\org\obj\Debug\Dragon键盘鼠标模拟器.pdb
+D:\Program Files\HK\Documents\GitHub\GlobalKeyboardAndMouseSimulator\obj\Debug\Dragon键盘鼠标模拟器.exe
+D:\Program Files\HK\Documents\GitHub\GlobalKeyboardAndMouseSimulator\obj\Debug\Dragon键盘鼠标模拟器.pdb
